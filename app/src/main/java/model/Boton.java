@@ -20,7 +20,7 @@ public class Boton extends Button {
      private int id;
     private boolean pulsado;
 
-    public Boton(Context c){
+    public Boton(Context c,int id){
         super(c);
     }
 

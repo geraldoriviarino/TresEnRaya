@@ -64,9 +64,9 @@ public class Partida {
                 botones_pulsados = jugadores.get(i).obtenerBotonesPulsados();
 
                 if(!(botones_pulsados.size()<3)){
-                    for(int j=0;j<SOLUCIONES_POSIBLES.length && !salir2;j++){//Iteramos la lista de botones pulsados por el mugador
-                        for(int k = 0; k<SOLUCIONES_POSIBLES[j].length && !salir1;k++){//Iteramos la lista de soluciones posibles
-                            for(int l=0;l<botones_pulsados.size() && !salir1;l++){
+                    for(int j=0;j<SOLUCIONES_POSIBLES.length && !salir2;j++){//Iteramos la lista de las soluciones posibles
+                        for(int k = 0; k<SOLUCIONES_POSIBLES[j].length && !salir1;k++){//Recorremos las casillas de la solución iterada
+                            for(int l=0;l<botones_pulsados.size() && !salir1;l++){//Iteramos
                                 if(SOLUCIONES_POSIBLES[j][k] == botones_pulsados.get(l).getID()){//Por cada botón vemos si la id de la casilla iterada coincide con su id
                                     solucion+=SOLUCIONES_POSIBLES[j][k];
                                 }

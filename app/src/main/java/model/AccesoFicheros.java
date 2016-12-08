@@ -9,8 +9,4 @@ public class AccesoFicheros {
     final static String RUTA_CUADRO_HONOR="cuadrohonor.txt";
 
 
-    public AccesoFicheros() {
-        //VAMOAPETALO SAMAELOOOOOOOOOOOO
-    }
-    //pene
 }
