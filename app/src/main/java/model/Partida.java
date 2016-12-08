@@ -58,14 +58,12 @@ public class Partida {
         ArrayList<Boton> botones_pulsados;
         int total_botones_pulsados = jugadores.get(0).obtenerBotonesPulsados().size() + jugadores.get(1).obtenerBotonesPulsados().size() ;
 
-
         boolean salir1=false, salir2 = false;
         for(int i = 0;i<jugadores.size() && !salir2;i++){//Iteramos la lista de jugadores
             if (jugadores.get(i).esTurno()){//Si es el turno del jugador iterado
                 botones_pulsados = jugadores.get(i).obtenerBotonesPulsados();
 
                 if(!(botones_pulsados.size()<3)){
-
                     for(int j=0;j<SOLUCIONES_POSIBLES.length && !salir2;j++){//Iteramos la lista de botones pulsados por el mugador
                         for(int k = 0; k<SOLUCIONES_POSIBLES[j].length && !salir1;k++){//Iteramos la lista de soluciones posibles
                             for(int l=0;l<botones_pulsados.size() && !salir1;l++){
