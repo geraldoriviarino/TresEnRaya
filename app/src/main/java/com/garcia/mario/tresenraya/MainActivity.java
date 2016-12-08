@@ -6,7 +6,7 @@ import android.widget.Button;
 
 import model.Boton;
 
-//Comentario de pruebaa
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
