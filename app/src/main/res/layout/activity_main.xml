@@ -11,21 +11,13 @@
     tools:context="com.garcia.mario.tresenraya.MainActivity">
 
     <TextView
-        android:text="JUGADOR 1"
+        android:text="@string/txtJugador1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtJugador1"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/eTxtJugador1" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/rgJugador1"
-        android:layout_alignStart="@+id/rgJugador1"
-        android:layout_marginTop="20dp"
-        android:id="@+id/txtJugador2" />
+        android:layout_alignStart="@+id/eTxtJugador1"
+        tools:ignore="HardcodedText" />
 
 
     <EditText
@@ -36,7 +28,8 @@
         android:id="@+id/eTxtJugador1"
         android:layout_marginStart="25dp"
         android:layout_below="@+id/txtJugador1"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        tools:ignore="LabelFor" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -45,7 +38,8 @@
         android:ems="10"
         android:id="@+id/eTxtJugador2"
         android:layout_below="@+id/txtJugador2"
-        android:layout_alignStart="@+id/txtJugador2" />
+        android:layout_alignStart="@+id/txtJugador2"
+        tools:ignore="LabelFor" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -59,9 +53,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/eTxtJugador2"
-            android:layout_alignStart="@+id/eTxtJugador2"
             android:layout_marginTop="24dp"
-            android:id="@+id/rbNaranjaJugador2" />
+            android:id="@+id/rbNaranjaJugador2"
+            tools:ignore="ObsoleteLayoutParam" />
 
         <RadioButton
             android:text="@string/rbVerde"
@@ -70,7 +64,8 @@
             android:layout_below="@+id/rbNaranjaJugador2"
             android:layout_alignStart="@+id/rbNaranjaJugador2"
             android:layout_marginTop="14dp"
-            android:id="@+id/rbVerdeJugador2" />
+            android:id="@+id/rbVerdeJugador2"
+            tools:ignore="ObsoleteLayoutParam" />
 
         <RadioButton
             android:text="@string/rbAzul"
@@ -79,7 +74,8 @@
             android:layout_below="@+id/rbVerdeJugador2"
             android:layout_alignStart="@+id/rbVerdeJugador2"
             android:layout_marginTop="11dp"
-            android:id="@+id/rbAzulJugador2" />
+            android:id="@+id/rbAzulJugador2"
+            tools:ignore="ObsoleteLayoutParam" />
     </RadioGroup>
 
     <Button
@@ -102,8 +98,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/eTxtJugador1"
-            android:layout_alignStart="@+id/rgJugador1"
-            android:id="@+id/rbNaranjaJugador1" />
+            android:id="@+id/rbNaranjaJugador1"
+            tools:ignore="ObsoleteLayoutParam"
+            />
 
         <RadioButton
             android:text="@string/rbVerde"
@@ -112,7 +109,8 @@
             android:layout_below="@+id/rbNaranjaJugador1"
             android:layout_alignStart="@+id/rgJugador1"
             android:layout_marginTop="17dp"
-            android:id="@+id/rbVerdeJugador1" />
+            android:id="@+id/rbVerdeJugador1"
+            tools:ignore="ObsoleteLayoutParam" />
 
         <RadioButton
             android:text="@string/rbAzul"
@@ -121,6 +119,16 @@
             android:layout_marginTop="16dp"
             android:id="@+id/rbAzulJugador1" />
     </RadioGroup>
+
+    <TextView
+        android:text="@string/txtJugador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/txtJugador2"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/rgJugador1"
+        android:layout_alignStart="@+id/rgJugador1" />
 
 
 </RelativeLayout>

@@ -1,6 +1,10 @@
 package model;
 
 import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.util.AttributeSet;
 import android.widget.Button;
 
 /**
@@ -39,4 +43,9 @@ public class Boton extends Button {
     public void pulsar(){
         pulsado = true;
     }
+
+
+
+
+
 }

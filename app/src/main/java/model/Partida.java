@@ -14,6 +14,7 @@ public class Partida {
 
     private ArrayList<Jugador> jugadores;
     private ArrayList<Boton> botones_pulsados;
+    private int total_botones_pulsados=0;
     private final String VICTORIA = "VICTORIA";
     private final String EMPATE = "EMPATE";
     private String resultado;
@@ -30,6 +31,18 @@ public class Partida {
     }
 
     /**
+     * Método encargado de asignar al jugador un botón pulsado por el mismo, comprobando que se
+     * añada al jugador que tenga el turno.
+     * @param b - Botón pulsado.
+     */
+    public void pulsar_boton(Boton b){
+        for(int i = 0;i<jugadores.size();i++) {//Iteramos la lista de jugadores
+            if (jugadores.get(i).esTurno()) {//Si es el turno del jugador iterado
+                jugadores.get(i).agregarBotonPulsado(b);
+            }
+        }
+    }
+    /**
      * Método que cambia el valor del turno de los jugadores. El jugador que tenga el turno
      * pasará a tener turno = false y el que esté parado obtendrá el valor true.
      */
@@ -37,10 +50,10 @@ public class Partida {
         for(int i=0;i<jugadores.size();i++){
             if(jugadores.get(i).esTurno()){
                 jugadores.get(i).asignarTurno(false);
+
             }else{
                 jugadores.get(i).asignarTurno(true);
             }
-
         }
     }
 
@@ -56,9 +69,10 @@ public class Partida {
         String solucion="";
         int resultado=1;
         ArrayList<Boton> botones_pulsados;
-        int total_botones_pulsados = jugadores.get(0).obtenerBotonesPulsados().size() + jugadores.get(1).obtenerBotonesPulsados().size() ;
-
         boolean salir1=false, salir2 = false;
+
+        total_botones_pulsados+=1; //Cada vez que se ejecute este método se habrá pulsado un botón.
+
         for(int i = 0;i<jugadores.size() && !salir2;i++){//Iteramos la lista de jugadores
             if (jugadores.get(i).esTurno()){//Si es el turno del jugador iterado
                 botones_pulsados = jugadores.get(i).obtenerBotonesPulsados();
