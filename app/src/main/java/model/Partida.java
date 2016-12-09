@@ -66,7 +66,7 @@ public class Partida {
                 if(!(botones_pulsados.size()<3)){
                     for(int j=0;j<SOLUCIONES_POSIBLES.length && !salir2;j++){//Iteramos la lista de las soluciones posibles
                         for(int k = 0; k<SOLUCIONES_POSIBLES[j].length && !salir1;k++){//Recorremos las casillas de la solución iterada
-                            for(int l=0;l<botones_pulsados.size() && !salir1;l++){//Iteramos
+                            for(int l=0;l<botones_pulsados.size() && !salir1;l++){//Iteramos la lista de los botones pulsados por el jugador
                                 if(SOLUCIONES_POSIBLES[j][k] == botones_pulsados.get(l).getID()){//Por cada botón vemos si la id de la casilla iterada coincide con su id
                                     solucion+=SOLUCIONES_POSIBLES[j][k];
                                 }
@@ -75,7 +75,7 @@ public class Partida {
                                     salir1 = true;                                          // y ninguno de ellos coincide, ya no serán 3 en línea, por lo que saltamos a la siguiente solución posible.
                                 }
 
-                                if(solucion.length()==3){//victoria
+                                if(solucion.length()==3){//Victoria
                                     salir1 = true;
                                     salir2 = true;
                                     resultado=0;
@@ -88,7 +88,7 @@ public class Partida {
 
             }
         }
-        if(total_botones_pulsados == 9 && solucion.length()<3){//empate
+        if(total_botones_pulsados == 9 && solucion.length()<3){//Empate
             resultado = 2;
         }
 

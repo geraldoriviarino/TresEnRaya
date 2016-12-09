@@ -10,15 +10,117 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.garcia.mario.tresenraya.MainActivity">
 
+    <TextView
+        android:text="JUGADOR 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtJugador1"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/eTxtJugador1" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgJugador1"
+        android:layout_alignStart="@+id/rgJugador1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtJugador2" />
+
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
         android:ems="10"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="55dp"
-        android:id="@+id/editText" />
+        android:id="@+id/eTxtJugador1"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/txtJugador1"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/eTxtJugador2"
+        android:layout_below="@+id/txtJugador2"
+        android:layout_alignStart="@+id/txtJugador2" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgJugador2"
+        android:layout_below="@+id/eTxtJugador2"
+        android:layout_alignStart="@+id/eTxtJugador2">
+
+        <RadioButton
+            android:text="@string/rbNaranja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/eTxtJugador2"
+            android:layout_alignStart="@+id/eTxtJugador2"
+            android:layout_marginTop="24dp"
+            android:id="@+id/rbNaranjaJugador2" />
+
+        <RadioButton
+            android:text="@string/rbVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbNaranjaJugador2"
+            android:layout_alignStart="@+id/rbNaranjaJugador2"
+            android:layout_marginTop="14dp"
+            android:id="@+id/rbVerdeJugador2" />
+
+        <RadioButton
+            android:text="@string/rbAzul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbVerdeJugador2"
+            android:layout_alignStart="@+id/rbVerdeJugador2"
+            android:layout_marginTop="11dp"
+            android:id="@+id/rbAzulJugador2" />
+    </RadioGroup>
+
+    <Button
+        android:text="@string/btnJugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnJugar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgJugador1"
+        android:layout_below="@+id/eTxtJugador1"
+        android:layout_alignStart="@+id/eTxtJugador1">
+
+        <RadioButton
+            android:text="@string/rbNaranja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eTxtJugador1"
+            android:layout_alignStart="@+id/rgJugador1"
+            android:id="@+id/rbNaranjaJugador1" />
+
+        <RadioButton
+            android:text="@string/rbVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbNaranjaJugador1"
+            android:layout_alignStart="@+id/rgJugador1"
+            android:layout_marginTop="17dp"
+            android:id="@+id/rbVerdeJugador1" />
+
+        <RadioButton
+            android:text="@string/rbAzul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/rbAzulJugador1" />
+    </RadioGroup>
+
+
 </RelativeLayout>
