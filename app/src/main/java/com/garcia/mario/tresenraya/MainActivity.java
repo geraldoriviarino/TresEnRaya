@@ -26,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void on_radiobutton_pulsado(View v){
+        bloquear_radiobutton(v);
+    }
+
     public void bloquear_radiobutton(View v){
         switch(v.getId()){
             case R.id.rbNaranjaJugador1:
@@ -66,11 +70,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void activar_radiobuttons(){
-        rbNaranjaJugador1.setEnabled(true);
-        rbNaranjaJugador2.setEnabled(true);
-        rbVerdeJugador1.setEnabled(true);
-        rbVerdeJugador2.setEnabled(true);
-        rbAzulJugador1.setEnabled(true);
-        rbAzulJugador2.setEnabled(true);
+
+        if(!rbNaranjaJugador1.isEnabled()) rbNaranjaJugador1.setEnabled(true);
+        if(!rbNaranjaJugador2.isEnabled()) rbNaranjaJugador2.setEnabled(true);
+        if(!rbVerdeJugador1.isEnabled()) rbVerdeJugador1.setEnabled(true);
+        if(!rbVerdeJugador2.isEnabled()) rbVerdeJugador2.setEnabled(true);
+        if(!rbAzulJugador1.isEnabled()) rbAzulJugador1.setEnabled(true);
+        if(!rbAzulJugador2.isEnabled()) rbAzulJugador2.setEnabled(true);
     }
 }

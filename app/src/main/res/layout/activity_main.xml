@@ -55,7 +55,8 @@
             android:layout_alignTop="@+id/eTxtJugador2"
             android:layout_marginTop="24dp"
             android:id="@+id/rbNaranjaJugador2"
-            tools:ignore="ObsoleteLayoutParam" />
+            tools:ignore="ObsoleteLayoutParam"
+            android:onClick="on_radiobutton_pulsado"/>
 
         <RadioButton
             android:text="@string/rbVerde"
@@ -65,7 +66,8 @@
             android:layout_alignStart="@+id/rbNaranjaJugador2"
             android:layout_marginTop="14dp"
             android:id="@+id/rbVerdeJugador2"
-            tools:ignore="ObsoleteLayoutParam" />
+            tools:ignore="ObsoleteLayoutParam"
+            android:onClick="on_radiobutton_pulsado"/>
 
         <RadioButton
             android:text="@string/rbAzul"
@@ -75,7 +77,8 @@
             android:layout_alignStart="@+id/rbVerdeJugador2"
             android:layout_marginTop="11dp"
             android:id="@+id/rbAzulJugador2"
-            tools:ignore="ObsoleteLayoutParam" />
+            tools:ignore="ObsoleteLayoutParam"
+            android:onClick="on_radiobutton_pulsado"/>
     </RadioGroup>
 
     <Button
@@ -85,6 +88,7 @@
         android:id="@+id/btnJugar"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -100,7 +104,8 @@
             android:layout_below="@+id/eTxtJugador1"
             android:id="@+id/rbNaranjaJugador1"
             tools:ignore="ObsoleteLayoutParam"
-            />
+            android:onClick="on_radiobutton_pulsado"/>
+
 
         <RadioButton
             android:text="@string/rbVerde"
@@ -110,14 +115,16 @@
             android:layout_alignStart="@+id/rgJugador1"
             android:layout_marginTop="17dp"
             android:id="@+id/rbVerdeJugador1"
-            tools:ignore="ObsoleteLayoutParam" />
+            tools:ignore="ObsoleteLayoutParam"
+            android:onClick="on_radiobutton_pulsado"/>
 
         <RadioButton
             android:text="@string/rbAzul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:id="@+id/rbAzulJugador1" />
+            android:id="@+id/rbAzulJugador1"
+            android:onClick="on_radiobutton_pulsado"/>
     </RadioGroup>
 
     <TextView
