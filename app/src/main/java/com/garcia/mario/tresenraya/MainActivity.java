@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import model.Jugador;
 import model.Partida;
 
-//
+//quesito
 public class MainActivity extends AppCompatActivity {
 
     RadioButton rbNaranjaJugador1, rbNaranjaJugador2, rbVerdeJugador1, rbVerdeJugador2,
@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
         jugadores.add(new Jugador(eTxtJugador1.getText().toString(),""));
         Intent intent = new Intent();
-       // intent.putExtra("PARTIDA",new Partida(jugadores));
-     //   startActivityForResult(intent,0);
+        intent.putExtra("PARTIDA",new Partida(jugadores));
+     / startActivityForResult(intent,0);
     }
 
     public void on_radiobutton_pulsado(View v){
