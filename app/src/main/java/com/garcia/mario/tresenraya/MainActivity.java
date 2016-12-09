@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         rbVerdeJugador2 = (RadioButton) findViewById(R.id.rbVerdeJugador2);
         rbAzulJugador1 = (RadioButton) findViewById(R.id.rbAzulJugador1);
         rbAzulJugador2 = (RadioButton) findViewById(R.id.rbAzulJugador2);
-        btnJugar = (Button) findViewById(R.id.btnJugar);
+
 
     }
 
