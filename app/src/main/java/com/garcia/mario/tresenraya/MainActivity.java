@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton rbVerdeJugador2;
     RadioButton rbAzulJugador1;
     RadioButton rbAzulJugador2;
-//////////sernrtnertnwaergawg vawg
+//////////sernrtnertnwaergawg vawgfewaqgewergergwergerg
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
