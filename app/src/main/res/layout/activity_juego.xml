@@ -20,66 +20,66 @@
         android:id="@+id/txtTurno" />
 
     <GridLayout
-        android:layout_height="300dp"
         android:rowCount="3"
         android:columnCount="3"
-        android:layout_width="300dp"
         android:layout_below="@+id/txtTurno"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp">
+        android:layout_marginTop="31dp"
+        android:layout_width="330dp"
+        android:layout_height="330dp">
 
         <Button
-            android:layout_height="100dp"
             android:id="@+id/btn1"
-            android:layout_width="100dp"
-            android:onClick="onBtnPulsado"/>
+            android:layout_width="110dp"
+            android:onClick="onBtnPulsado"
+            android:layout_height="110dp" />
 
         <Button
-            android:layout_height="100dp"
             android:id="@+id/btn2"
-            android:layout_width="100dp"
-            android:onClick="onBtnPulsado"/>
+            android:layout_width="110dp"
+            android:onClick="onBtnPulsado"
+            android:layout_height="110dp" />
 
         <Button
-            android:layout_height="100dp"
             android:id="@+id/btn3"
-            android:layout_width="100dp"
-            android:onClick="onBtnPulsado"/>
+            android:layout_width="110dp"
+            android:onClick="onBtnPulsado"
+            android:layout_height="110dp" />
 
         <Button
-            android:layout_height="100dp"
             android:id="@+id/btn4"
-            android:layout_width="100dp"
-            android:onClick="onBtnPulsado"/>
+            android:layout_width="110dp"
+            android:onClick="onBtnPulsado"
+            android:layout_height="110dp" />
 
         <Button
-            android:layout_height="100dp"
             android:id="@+id/btn5"
-            android:layout_width="100dp"
-            android:onClick="onBtnPulsado"/>
+            android:layout_width="110dp"
+            android:onClick="onBtnPulsado"
+            android:layout_height="110dp" />
 
         <Button
-            android:layout_height="100dp"
             android:id="@+id/btn6"
-            android:layout_width="100dp"
-            android:onClick="onBtnPulsado"/>
+            android:layout_width="110dp"
+            android:onClick="onBtnPulsado"
+            android:layout_height="110dp" />
 
         <Button
-            android:layout_height="100dp"
             android:id="@+id/btn7"
-            android:layout_width="100dp"
-            android:onClick="onBtnPulsado"/>
+            android:layout_width="110dp"
+            android:onClick="onBtnPulsado"
+            android:layout_height="110dp" />
 
         <Button
-            android:layout_height="100dp"
             android:id="@+id/btn8"
-            android:layout_width="100dp"
-            android:onClick="onBtnPulsado"/>
+            android:layout_width="110dp"
+            android:onClick="onBtnPulsado"
+            android:layout_height="110dp" />
         <Button
-            android:layout_height="100dp"
             android:id="@+id/btn9"
-            android:layout_width="100dp"
-            android:onClick="onBtnPulsado"/>
+            android:layout_width="110dp"
+            android:onClick="onBtnPulsado"
+            android:layout_height="110dp" />
 
 
     </GridLayout>
