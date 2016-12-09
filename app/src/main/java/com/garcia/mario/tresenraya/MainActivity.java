@@ -3,6 +3,7 @@ package com.garcia.mario.tresenraya;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 
 
@@ -14,13 +15,13 @@ public class MainActivity extends AppCompatActivity {
     RadioButton rbVerdeJugador2;
     RadioButton rbAzulJugador1;
     RadioButton rbAzulJugador2;
-
+    Button btnJugar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        cargar_radiobuttons();
+        cargar_componentes();
 
 
 
@@ -61,17 +62,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void cargar_radiobuttons(){
+    public void cargar_componentes(){
         rbNaranjaJugador1 = (RadioButton) findViewById(R.id.rbNaranjaJugador1);
         rbNaranjaJugador2 = (RadioButton) findViewById(R.id.rbNaranjaJugador2);
         rbVerdeJugador1 = (RadioButton) findViewById(R.id.rbVerdeJugador1);
         rbVerdeJugador2 = (RadioButton) findViewById(R.id.rbVerdeJugador2);
         rbAzulJugador1 = (RadioButton) findViewById(R.id.rbAzulJugador1);
         rbAzulJugador2 = (RadioButton) findViewById(R.id.rbAzulJugador2);
+        btnJugar = (Button) findViewById(R.id.btnJugar);
+
     }
 
     public void activar_radiobuttons(){
-
         if(!rbNaranjaJugador1.isEnabled()) rbNaranjaJugador1.setEnabled(true);
         if(!rbNaranjaJugador2.isEnabled()) rbNaranjaJugador2.setEnabled(true);
         if(!rbVerdeJugador1.isEnabled()) rbVerdeJugador1.setEnabled(true);
