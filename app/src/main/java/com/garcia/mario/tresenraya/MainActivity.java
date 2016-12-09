@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        cargar_radiobuttons();
 
 
 
@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void bloquear_radiobutton(View v){
-        switch(v.getId()){
+        RadioButton rb = (RadioButton) v;
+        switch(rb.getId()){
             case R.id.rbNaranjaJugador1:
                 activar_radiobuttons();
                 rbNaranjaJugador2.setEnabled(false);
