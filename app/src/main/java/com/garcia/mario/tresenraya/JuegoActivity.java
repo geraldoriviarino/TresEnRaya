@@ -28,8 +28,9 @@ public class JuegoActivity extends AppCompatActivity {
         p = (Partida) intent.getExtras().getSerializable("PARTIDA");
 
 
-//
     }
+
+
 
     public void onBtnPulsado(View v){
         switch(v.getId()){
